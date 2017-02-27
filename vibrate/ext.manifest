@@ -1,0 +1,11 @@
+name: "Vibrate"
+
+platforms:
+  arm64-ios:
+    context:
+        frameworks: ["QuartzCore", "AudioToolbox"]
+
+  armv7-ios:
+    context:
+        frameworks: ["QuartzCore", "AudioToolbox"]
+        
