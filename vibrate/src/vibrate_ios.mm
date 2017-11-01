@@ -9,10 +9,8 @@
 
 int VibratePlatform_Trigger()
 {
-
-	//NSLog(@"I'm vibrating");
 	AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
 	return 1;
 }
 
-#endif // DM_PLATFORM_IOS/DM_PLATFORM_OSX
+#endif
