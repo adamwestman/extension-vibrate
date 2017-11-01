@@ -24,3 +24,6 @@ bundle_identifier = com.awest.vibrato
 [library]
 include_dirs = vibrate
 
+[android]
+package = com.awest.vibrato
+
