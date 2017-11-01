@@ -56,9 +56,8 @@ int VibratePlatform_Trigger()
 	jclass cls = GetClass(env, "com.defold.android.vibrate.VibrateExtension");
 
 	// call method
-	jmethodID vibrate = env->GetStaticMethodID(cls, "Vibrate", "(Landroid/content/Context;)V");
+	jmethodID vibrate = env->GetStaticMethodID(cls, "Vibrate", "(Landroid/app/Activity;)V");
 	env->CallStaticVoidMethod(cls, vibrate, dmGraphics::GetNativeAndroidActivity());
-
 	return 1;
 }
 

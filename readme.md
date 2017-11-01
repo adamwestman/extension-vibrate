@@ -4,7 +4,7 @@ Adds support for device vibration service in Defold.
 
 # Known issues
 
-The currently supported platforms are: iOS
+The currently supported platforms are: iOS and Android
 
 
 # FAQ
