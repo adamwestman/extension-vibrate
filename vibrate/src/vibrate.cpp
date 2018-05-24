@@ -1,7 +1,10 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
+
+#if defined(DM_PLATFORM_IOS) || defined(DM_PLATFORM_OSX) || defined(DM_PLATFORM_ANDROID)
 #include <unistd.h>
+#endif
 
 #define EXTENSION_NAME Vibrate
 #define LIB_NAME "Vibrate"
