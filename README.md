@@ -22,3 +22,9 @@ See the [manual](http://www.defold.com/manuals/libraries/) for further info.
 ## vibrate.trigger()
 
 Invoke the device specific vibration service.
+
+```lua
+if vibrate then
+  vibrate.trigger()
+end
+```
