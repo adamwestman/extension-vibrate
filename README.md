@@ -2,7 +2,7 @@
 
 Adds support for device vibration service in Defold.
 
-# Known issues
+# Platform support
 
 The currently supported platforms are: iOS and Android
 
@@ -17,14 +17,13 @@ to the project setting `project.dependencies`, and you should be good to go.
 See the [manual](http://www.defold.com/manuals/libraries/) for further info.
 
 
-# Lua API
-
-## vibrate.trigger()
-
-Invoke the device specific vibration service.
+# Usage
 
 ```lua
 if vibrate then
   vibrate.trigger()
 end
 ```
+Invoke the device specific vibration service.
+
+
