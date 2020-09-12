@@ -3,6 +3,7 @@ package com.defold.android.vibrate;
 import android.util.Log;
 import android.os.Vibrator;
 import android.os.VibrationEffect;
+import android.os.Build;
 import android.app.Activity;
 import android.content.Context;
 import java.lang.Runnable;
