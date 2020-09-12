@@ -2,6 +2,7 @@ package com.defold.android.vibrate;
 
 import android.util.Log;
 import android.os.Vibrator;
+import android.os.VibrationEffect;
 import android.app.Activity;
 import android.content.Context;
 import java.lang.Runnable;
@@ -13,8 +14,13 @@ class VibrateExtension {
 		activity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
-				Vibrator vibrator = (Vibrator)activity.getSystemService(Context.VIBRATOR_SERVICE);
-				vibrator.vibrate(1000);
+				Vibrator v = (Vibrator)activity.getSystemService(Context.VIBRATOR_SERVICE);
+				if (Build.VERSION.SDK_INT >= 26) {
+					v.vibrate(VibrationEffect.createOneShot(1000, VibrationEffect.DEFAULT_AMPLITUDE));
+				} else {
+					//deprecated in API 26 
+					v.vibrate(1000);
+				}
 			}
 		});
 	}
