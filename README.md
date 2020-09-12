@@ -26,4 +26,3 @@ end
 ```
 Invoke the device specific vibration service.
 
-
