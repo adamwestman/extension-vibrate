@@ -1,0 +1,7 @@
+- name: vibrate
+  type: table
+  desc: Adds support for device vibration service in Defold.
+  members:
+    - name: trigger
+      type: function
+      desc: Invoke the device specific vibration service.
